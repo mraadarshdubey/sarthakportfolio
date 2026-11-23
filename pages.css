@@ -1,0 +1,2329 @@
+/* ADDITIONAL PAGES
+ * Plain component CSS for Work, About, Contact, project details and 404.
+ * Shared header, footer, fonts and reusable cards are in styles.css.
+ */
+.archive-heading {
+  letter-spacing: -0.025em;
+  font-family: Outfit, "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 1.875rem;
+  line-height: 1.12;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgb(13 13 13/1);
+}
+
+.archive-subheading {
+  letter-spacing: -0.01em;
+  font-family: Outfit, "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 900;
+  color: rgb(13 13 13/1);
+}
+
+.biography-name-label {
+  letter-spacing: -0.01em;
+  font-family: Outfit, "Plus Jakarta Sans", system-ui, sans-serif;
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 900;
+  color: rgb(255 255 255/1);
+}
+
+.biography-heading {
+  letter-spacing: -0.025em;
+  font-family: Outfit, "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 1.875rem;
+  line-height: 1.12;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgb(13 13 13/1);
+}
+
+.biography-subheading {
+  letter-spacing: -0.01em;
+  font-family: Outfit, "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgb(13 13 13/1);
+}
+
+.biography-callout-heading {
+  letter-spacing: -0.01em;
+  font-family: Outfit, "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 900;
+  color: rgb(13 13 13/1);
+}
+
+.connect-heading {
+  letter-spacing: -0.025em;
+  font-family: Outfit, "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 1.875rem;
+  line-height: 1.12;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgb(13 13 13/1);
+}
+
+.connect-whatsapp-heading {
+  letter-spacing: -0.01em;
+  font-family: Outfit, "Plus Jakarta Sans", system-ui, sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 900;
+  color: rgb(255 255 255/1);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect-email-heading {
+  letter-spacing: -0.01em;
+  font-family: Outfit, "Plus Jakarta Sans", system-ui, sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 900;
+  color: rgb(13 13 13/1);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect-detail-value {
+  letter-spacing: -0.01em;
+  font-family: Outfit, "Plus Jakarta Sans", system-ui, sans-serif;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: rgb(13 13 13/1);
+}
+
+.case-heading {
+  letter-spacing: -0.025em;
+  font-family: Outfit, "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgb(13 13 13/1);
+}
+
+.case-client-name {
+  letter-spacing: -0.01em;
+  font-family: Outfit, "Plus Jakarta Sans", system-ui, sans-serif;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 900;
+  color: rgb(13 13 13/1);
+}
+
+.case-navigation-title {
+  letter-spacing: -0.01em;
+  font-family: Outfit, "Plus Jakarta Sans", system-ui, sans-serif;
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 900;
+  color: rgb(13 13 13/1);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.missing-heading {
+  letter-spacing: -0.01em;
+  font-family: Outfit, "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+  color: rgb(13 13 13/1);
+}
+
+.case-overlay {
+  pointer-events: none;
+  position: absolute;
+  inset: 0px;
+  background-image: linear-gradient(to top, #000 , #0006 , #0009 );
+}
+
+.case-streaming-caption {
+  pointer-events: none;
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  right: 0.75rem;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  color: rgb(161 161 170/1);
+}
+
+.biography-portrait-shading {
+  position: absolute;
+  inset: 0px;
+  background-image: linear-gradient(to top, #0d0d0de6 , transparent , transparent );
+}
+
+.biography-brand-badge {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  border-radius: 0.25rem;
+  background-color: rgb(230 62 38/1);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(255 255 255/1);
+}
+
+.biography-portrait-caption {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+}
+
+.case-play-overlay {
+  position: absolute;
+  inset: 0px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.archive-master-drive-vault-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: rgb(13 13 13/1);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(255 255 255/1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.biography-portrait-frame {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  max-width: 280px;
+  overflow: hidden;
+  border-radius: 1rem;
+  border-width: 2px;
+  border-color: rgb(13 13 13/1);
+  background-color: rgb(255 255 255/1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px #00000040;
+}
+
+.case-player-frame {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border-width: 2px;
+  border-color: rgb(13 13 13/1);
+  background-color: rgb(0 0 0/1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px #00000040;
+}
+
+.case-player-link {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.archive-page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem;
+  padding-top: 6rem;
+}
+
+.archive-callout-copy {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 32rem;
+  padding-top: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(13, 13, 13, 0.7);
+}
+
+.biography-page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem;
+  padding-top: 6rem;
+}
+
+.biography-callout-copy {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 28rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(13, 13, 13, 0.7);
+}
+
+.connect-page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem;
+  padding-top: 6rem;
+}
+
+.case-page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 6rem;
+  padding-top: 8rem;
+}
+
+.case-video-player {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 28rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  border-width: 2px;
+  border-color: rgb(13 13 13/1);
+  background-color: rgb(255 255 255/1);
+  padding: 0.5rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px #00000040;
+}
+
+.biography-eyebrow {
+  margin-bottom: 0.375rem;
+  display: block;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgb(230 62 38/1);
+}
+
+.archive-filters {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  padding-bottom: 2.5rem;
+}
+
+@media (max-width: 639px) {
+  .archive-filters {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    padding-bottom: 1.5rem;
+  }
+
+  .archive-filters .archive-filter {
+    min-width: 0;
+    min-height: 48px;
+    justify-content: space-between;
+    gap: 0.375rem;
+    padding-inline: 0.625rem;
+    text-align: left;
+  }
+
+  .archive-filters .archive-filter > span:last-child {
+    flex-shrink: 0;
+  }
+}
+
+.archive-header {
+  margin-bottom: 2rem;
+  max-width: 56rem;
+}
+
+.case-play-icon {
+  margin-left: 0.125rem;
+  height: 1.75rem;
+  width: 1.75rem;
+  fill: currentcolor;
+}
+
+.archive-contact-callout {
+  margin-top: 3rem;
+  border-top-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.case-watch-on-drive-label {
+  margin-top: 0.875rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(13, 13, 13, 0.9);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(255 255 255/1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+  backdrop-filter: blur(12px);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect-whatsapp-copy {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  font-size: 11px;
+  line-height: 1.625;
+  color: rgb(199 199 204/1);
+}
+
+.connect-email-copy {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  font-size: 11px;
+  line-height: 1.625;
+  color: rgba(13, 13, 13, 0.7);
+}
+
+.biography-freelance-video-editor-label {
+  display: block;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(230 62 38/1);
+}
+
+.biography-pillar-heading {
+  display: block;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(230 62 38/1);
+}
+
+.connect-fastest-label {
+  display: block;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(230 62 38/1);
+}
+
+.connect-direct-email-label {
+  display: block;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(13, 13, 13, 0.6);
+}
+
+.connect-detail-description {
+  display: block;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  font-size: 10px;
+  color: rgba(13, 13, 13, 0.6);
+}
+
+.case-about-the-edit-label {
+  display: block;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgb(230 62 38/1);
+}
+
+.case-challenge-heading {
+  display: block;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(230 62 38/1);
+}
+
+.case-client-heading {
+  display: block;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(230 62 38/1);
+}
+
+.case-metadata-heading {
+  display: block;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(13 13 13/1);
+}
+
+.archive-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  background-color: rgb(255 255 255/1);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(13 13 13/1);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.biography-portrait-column {
+  display: flex;
+  justify-content: center;
+}
+
+.biography-location {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding-top: 0.125rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  color: rgb(199 199 204/1);
+}
+
+.biography-capability {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  background-color: rgb(255 255 255/1);
+  padding: 0.625rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 #0000000d;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect-whatsapp-card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgb(13 13 13/1);
+  background-color: rgb(13 13 13/1);
+  padding: 0.875rem;
+  color: rgb(255 255 255/1);
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect-whatsapp-icon-badge {
+  display: flex;
+  height: 2.25rem;
+  width: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgb(230 62 38/1);
+}
+
+.connect-whatsapp-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-width: 1px;
+  border-color: rgba(255, 255, 255, 0.1);
+  padding-top: 0.5rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 9px;
+  font-weight: 700;
+  color: rgb(255 255 255/1);
+}
+
+.connect-email-card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.15);
+  background-color: rgb(255 255 255/1);
+  padding: 0.875rem;
+  color: rgb(13 13 13/1);
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect-email-icon-badge {
+  display: flex;
+  height: 2.25rem;
+  width: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: rgb(13 13 13/1);
+  color: rgb(255 255 255/1);
+}
+
+.connect-email-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  padding-top: 0.5rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 9px;
+  font-weight: 700;
+  color: rgb(13 13 13/1);
+}
+
+.connect-detail-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 700;
+  color: rgb(230 62 38/1);
+}
+
+.connect-open-drive-folder-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding-top: 0.125rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgb(13 13 13/1);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.case-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.case-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.case-play-button {
+  display: flex;
+  height: 4rem;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: rgb(255 255 255/1);
+  color: rgb(13 13 13/1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.case-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.case-drive-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: rgb(13 13 13/1);
+}
+
+.case-next-caption {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: rgba(13, 13, 13, 0.6);
+}
+
+.case-previous-caption {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: rgba(13, 13, 13, 0.6);
+}
+
+.missing-page {
+  display: flex;
+  min-height: 75vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: center;
+}
+
+.archive-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius: 9999px;
+  background-color: rgb(13 13 13/1);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  color: rgb(255 255 255/1);
+}
+
+.archive-whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  border-radius: 0.75rem;
+  background-color: rgb(13 13 13/1);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(255 255 255/1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.archive-email-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.15);
+  background-color: rgb(255 255 255/1);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(13 13 13/1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.biography-start-a-project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: rgb(13 13 13/1);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(255 255 255/1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius: 9999px;
+  background-color: rgb(13 13 13/1);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  color: rgb(255 255 255/1);
+}
+
+.case-all-video-edits-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: rgba(13, 13, 13, 0.7);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.case-drive-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 600;
+  color: rgb(255 255 255/1);
+}
+
+.case-watch-master-on-drive-link {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(13 13 13/1);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(255 255 255/1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.missing-back-to-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  background-color: rgb(13 13 13/1);
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(255 255 255/1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.archive-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  gap: 0.625rem;
+}
+
+.archive-callout-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+.biography-introduction {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0px, 1fr));
+  align-items: center;
+  gap: 2rem;
+}
+
+.biography-capabilities {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  gap: 0.5rem;
+  border-top-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  padding-top: 1rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  color: rgb(13 13 13/1);
+}
+
+.biography-philosophy-columns {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0px, 1fr));
+  gap: 1rem;
+  border-top-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  padding-top: 0.75rem;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.625;
+  color: rgba(13, 13, 13, 0.7);
+}
+
+.connect-contact-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  align-items: stretch;
+  gap: 0.625rem;
+}
+
+.connect-details {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0px, 1fr));
+  gap: 1rem;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  background-color: rgb(255 255 255/1);
+  padding: 1rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 #0000000d;
+}
+
+.case-information {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0px, 1fr));
+  gap: 3rem;
+  border-top-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  padding-top: 2rem;
+}
+
+.case-challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0px, 1fr));
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.case-project-navigation {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0px, 1fr));
+  gap: 1.5rem;
+  border-top-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  padding-top: 4rem;
+}
+
+.connect-archive-arrow {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.case-external-link-icon {
+  height: 0.75rem;
+  width: 0.75rem;
+  color: rgb(230 62 38/1);
+}
+
+.archive-film-icon {
+  height: 0.875rem;
+  width: 0.875rem;
+  color: rgb(230 62 38/1);
+}
+
+.archive-hard-drive-icon {
+  height: 0.875rem;
+  width: 0.875rem;
+  color: rgb(230 62 38/1);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.archive-arrow-right-icon {
+  height: 0.875rem;
+  width: 0.875rem;
+  color: rgb(255 255 255/1);
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.archive-contact-arrow {
+  height: 0.875rem;
+  width: 0.875rem;
+}
+
+.biography-globe-icon {
+  height: 0.875rem;
+  width: 0.875rem;
+  color: rgb(255 255 255/1);
+}
+
+.biography-circle-check-icon {
+  height: 0.875rem;
+  width: 0.875rem;
+  flex-shrink: 0;
+  color: rgb(230 62 38/1);
+}
+
+.connect-arrow-up-right-icon {
+  height: 0.875rem;
+  width: 0.875rem;
+  flex-shrink: 0;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect-clock-icon {
+  height: 0.875rem;
+  width: 0.875rem;
+  color: rgb(13 13 13/1);
+}
+
+.case-arrow-left-icon {
+  height: 0.875rem;
+  width: 0.875rem;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.case-drive-button-arrow {
+  height: 0.875rem;
+  width: 0.875rem;
+}
+
+.biography-arrow-right-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.connect-message-square-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.case-hard-drive-icon {
+  height: 1rem;
+  width: 1rem;
+  color: rgb(230 62 38/1);
+}
+
+.case-chevron-right-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.missing-arrow-left-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.biography-portrait {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transition-property: transform;
+  transition-duration: 0.7s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.case-preview-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(.9);
+  transition-property: transform;
+  transition-duration: 0.7s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.archive-description {
+  max-width: 42rem;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.625;
+  font-weight: 300;
+  color: rgba(13, 13, 13, 0.7);
+}
+
+.biography-philosophy-introduction {
+  max-width: 42rem;
+}
+
+.connect-header {
+  max-width: 48rem;
+}
+
+.case-header {
+  max-width: 56rem;
+}
+
+.missing-description {
+  max-width: 28rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(13, 13, 13, 0.7);
+}
+
+.connect-detail-column > :not([hidden]) ~ :not([hidden]) {
+  margin-top: .125rem;
+  margin-bottom: 0px;
+}
+
+.biography-portrait-caption > :not([hidden]) ~ :not([hidden]) {
+  margin-top: .25rem;
+  margin-bottom: 0px;
+}
+
+.biography-philosophy-introduction > :not([hidden]) ~ :not([hidden]) {
+  margin-top: .25rem;
+  margin-bottom: 0px;
+}
+
+.biography-philosophy-pillar > :not([hidden]) ~ :not([hidden]) {
+  margin-top: .25rem;
+  margin-bottom: 0px;
+}
+
+.case-client-card > :not([hidden]) ~ :not([hidden]) {
+  margin-top: .25rem;
+  margin-bottom: 0px;
+}
+
+.case-next-project > :not([hidden]) ~ :not([hidden]) {
+  margin-top: .25rem;
+  margin-bottom: 0px;
+}
+
+.case-previous-project > :not([hidden]) ~ :not([hidden]) {
+  margin-top: .25rem;
+  margin-bottom: 0px;
+}
+
+.biography-page > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 3rem;
+  margin-bottom: 0px;
+}
+
+.case-main-column > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 3rem;
+  margin-bottom: 0px;
+}
+
+.case-page > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 4rem;
+  margin-bottom: 0px;
+}
+
+.connect-card-content > :not([hidden]) ~ :not([hidden]) {
+  margin-top: .5rem;
+  margin-bottom: 0px;
+}
+
+.case-challenge-card > :not([hidden]) ~ :not([hidden]) {
+  margin-top: .5rem;
+  margin-bottom: 0px;
+}
+
+.biography-paragraphs > :not([hidden]) ~ :not([hidden]) {
+  margin-top: .75rem;
+  margin-bottom: 0px;
+}
+
+.connect-header > :not([hidden]) ~ :not([hidden]) {
+  margin-top: .75rem;
+  margin-bottom: 0px;
+}
+
+.connect-whatsapp-card > :not([hidden]) ~ :not([hidden]) {
+  margin-top: .75rem;
+  margin-bottom: 0px;
+}
+
+.connect-email-card > :not([hidden]) ~ :not([hidden]) {
+  margin-top: .75rem;
+  margin-bottom: 0px;
+}
+
+.case-metadata-card > :not([hidden]) ~ :not([hidden]) {
+  margin-top: .75rem;
+  margin-bottom: 0px;
+}
+
+.archive-header > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+}
+
+.archive-introduction > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+}
+
+.archive-contact-callout > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+}
+
+.biography-philosophy > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+}
+
+.biography-contact-callout > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+}
+
+.case-header > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+}
+
+.case-description-block > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+}
+
+.case-drive-card > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+}
+
+.biography-introduction-copy > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 1.25rem;
+  margin-bottom: 0px;
+}
+
+.missing-page > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 1.5rem;
+  margin-bottom: 0px;
+}
+
+.connect-page > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 2rem;
+  margin-bottom: 0px;
+}
+
+.case-sidebar > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 2rem;
+  margin-bottom: 0px;
+}
+
+.archive-whatsapp-label {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.biography-capability-caption {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 700;
+}
+
+.connect-open-chat-label {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.case-project-badge {
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.15);
+  background-color: rgb(255 255 255/1);
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: rgb(13 13 13/1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 #0000000d;
+}
+
+.case-category-badge {
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  background-color: rgb(255 255 255/1);
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(13, 13, 13, 0.7);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 #0000000d;
+}
+
+.case-click-to-stream-label {
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(13, 13, 13, 0.9);
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-weight: 700;
+  color: rgb(255 255 255/1);
+  backdrop-filter: blur(4px);
+}
+
+.case-format-tag {
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  background-color: rgb(236 235 232/1);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  color: rgb(13 13 13/1);
+}
+
+.case-source-tag {
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  background-color: rgb(236 235 232/1);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(13, 13, 13, 0.8);
+}
+
+.biography-philosophy {
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  background-color: rgb(255 255 255/1);
+  padding: 1rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 #0000000d;
+}
+
+.case-challenge-card {
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  background-color: rgb(255 255 255/1);
+  padding: 1.5rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 #0000000d;
+}
+
+.case-client-card {
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  background-color: rgb(255 255 255/1);
+  padding: 1.25rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 #0000000d;
+}
+
+.case-metadata-card {
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  background-color: rgb(255 255 255/1);
+  padding: 1.25rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 #0000000d;
+}
+
+.case-drive-card {
+  border-radius: 0.75rem;
+  border-width: 2px;
+  border-color: rgb(13 13 13/1);
+  background-color: rgb(255 255 255/1);
+  padding: 1.5rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
+}
+
+.case-next-project {
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  background-color: rgb(255 255 255/1);
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 #0000000d;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.case-previous-project {
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  background-color: rgb(255 255 255/1);
+  padding: 1.5rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 #0000000d;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.biography-contact-callout {
+  border-top-width: 1px;
+  border-color: rgba(13, 13, 13, 0.1);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.biography-callout-action {
+  padding-top: 0.5rem;
+}
+
+.missing-home-action {
+  padding-top: 1rem;
+}
+
+.biography-the-editing-philosophy-label {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgb(230 62 38/1);
+}
+
+.missing-404-frame-not-found-label {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgb(230 62 38/1);
+}
+
+.biography-description {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.625;
+  font-weight: 300;
+  color: rgba(13, 13, 13, 0.75);
+}
+
+.connect-description {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.625;
+  font-weight: 300;
+  color: rgba(13, 13, 13, 0.7);
+}
+
+.case-description {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.625;
+  font-weight: 300;
+  color: rgba(13, 13, 13, 0.7);
+}
+
+.case-full-description {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.625;
+  color: rgba(13, 13, 13, 0.85);
+}
+
+.case-drive-copy {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(13, 13, 13, 0.7);
+}
+
+.archive-filter-count {
+  font-size: 10px;
+  color: rgb(161 161 170/1);
+}
+
+.archive-category-count {
+  font-size: 10px;
+  color: rgba(13, 13, 13, 0.5);
+}
+
+.case-challenge-copy {
+  font-size: 0.75rem;
+  line-height: 1.625;
+  color: rgba(13, 13, 13, 0.7);
+}
+
+.connect-email-address {
+  color: rgb(13 13 13/1);
+}
+
+.biography-into-impact-label {
+  color: rgba(13, 13, 13, 0.6);
+}
+
+.connect-something-great-label {
+  color: rgba(13, 13, 13, 0.6);
+}
+
+.case-drive-accent {
+  color: rgb(230 62 38/1);
+}
+
+.connect-emphasis {
+  color: rgb(255 255 255/1);
+}
+
+.archive-master-drive-vault-link:hover {
+  transform: translate(, ) rotate() skewX() skewY() scaleX(1.02) scaleY(1.02);
+  background-color: rgb(230 62 38/1);
+}
+
+.archive-whatsapp-link:hover {
+  transform: translate(, ) rotate() skewX() skewY() scaleX(1.02) scaleY(1.02);
+  background-color: rgb(230 62 38/1);
+}
+
+.archive-email-link:hover {
+  transform: translate(, ) rotate() skewX() skewY() scaleX(1.02) scaleY(1.02);
+  border-color: rgb(230 62 38/1);
+  background-color: rgb(247 246 243/1);
+}
+
+.biography-start-a-project-link:hover {
+  transform: translate(, ) rotate() skewX() skewY() scaleX(1.02) scaleY(1.02);
+  background-color: rgb(230 62 38/1);
+}
+
+.archive-filter:hover {
+  border-color: rgb(230 62 38/1);
+  color: rgb(230 62 38/1);
+}
+
+.biography-capability:hover {
+  border-color: rgb(230 62 38/1);
+}
+
+.connect-whatsapp-card:hover {
+  border-color: rgb(230 62 38/1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px #00000040;
+}
+
+.connect-email-card:hover {
+  border-color: rgb(230 62 38/1);
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px #00000040;
+}
+
+.case-next-project:hover {
+  border-color: rgb(230 62 38/1);
+  background-color: rgb(247 246 243/1);
+}
+
+.case-previous-project:hover {
+  border-color: rgb(230 62 38/1);
+  background-color: rgb(247 246 243/1);
+}
+
+.case-watch-master-on-drive-link:hover {
+  background-color: rgb(230 62 38/1);
+}
+
+.missing-back-to-home-link:hover {
+  background-color: rgb(230 62 38/1);
+}
+
+.connect-open-drive-folder-link:hover {
+  color: rgb(230 62 38/1);
+}
+
+.case-all-video-edits-link:hover {
+  color: rgb(230 62 38/1);
+}
+
+.archive-master-drive-vault-link:active {
+  transform: translate(, ) rotate() skewX() skewY() scaleX(.95) scaleY(.95);
+}
+
+.archive-whatsapp-link:active {
+  transform: translate(, ) rotate() skewX() skewY() scaleX(.95) scaleY(.95);
+}
+
+.archive-email-link:active {
+  transform: translate(, ) rotate() skewX() skewY() scaleX(.95) scaleY(.95);
+}
+
+.interaction-group:hover .case-arrow-left-icon {
+  transform: translate(-.25rem, ) rotate() skewX() skewY() scaleX() scaleY();
+}
+
+.interaction-group:hover .connect-arrow-up-right-icon {
+  transform: translate(.25rem, -.25rem) rotate() skewX() skewY() scaleX() scaleY();
+}
+
+.interaction-group:hover .archive-arrow-right-icon {
+  transform: translate(.25rem, ) rotate() skewX() skewY() scaleX() scaleY();
+}
+
+.interaction-group:hover .biography-portrait {
+  transform: translate(, ) rotate() skewX() skewY() scaleX(1.05) scaleY(1.05);
+}
+
+.interaction-group:hover .case-preview-image {
+  transform: translate(, ) rotate() skewX() skewY() scaleX(1.05) scaleY(1.05);
+  filter: brightness(1);
+}
+
+.interaction-group:hover .case-play-button {
+  transform: translate(, ) rotate() skewX() skewY() scaleX(1.05) scaleY(1.05);
+  background-color: rgb(230 62 38/1);
+  color: rgb(255 255 255/1);
+}
+
+.interaction-group:hover .case-watch-on-drive-label {
+  border-color: rgb(230 62 38/1);
+  color: rgb(230 62 38/1);
+}
+
+.interaction-group:hover .connect-whatsapp-heading {
+  color: rgb(230 62 38/1);
+}
+
+.interaction-group:hover .connect-email-heading {
+  color: rgb(230 62 38/1);
+}
+
+.interaction-group:hover .case-next-caption {
+  color: rgb(230 62 38/1);
+}
+
+.interaction-group:hover .case-navigation-title {
+  color: rgb(230 62 38/1);
+}
+
+.interaction-group:hover .case-previous-caption {
+  color: rgb(230 62 38/1);
+}
+
+.interaction-group:hover .archive-hard-drive-icon {
+  color: rgb(255 255 255/1);
+}
+
+
+@media (width >= 640px) {
+  .biography-portrait-caption {
+    bottom: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .archive-header {
+    margin-bottom: 3rem;
+  }
+
+  .biography-eyebrow {
+    margin-bottom: 0.5rem;
+  }
+
+  .archive-contact-callout {
+    margin-top: 6rem;
+    padding-top: 4rem;
+  }
+
+  .connect-whatsapp-copy {
+    -webkit-line-clamp: none;
+    -webkit-box-orient: horizontal;
+    display: block;
+    overflow: visible;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .connect-email-copy {
+    -webkit-line-clamp: none;
+    -webkit-box-orient: horizontal;
+    display: block;
+    overflow: visible;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .archive-callout-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .biography-portrait-frame {
+    aspect-ratio: 4 / 5;
+    max-width: none;
+  }
+
+  .connect-whatsapp-icon-badge {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 1rem;
+  }
+
+  .connect-email-icon-badge {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 1rem;
+  }
+
+  .connect-archive-arrow {
+    height: 0.875rem;
+    width: 0.875rem;
+  }
+
+  .archive-hard-drive-icon {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .biography-circle-check-icon {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .connect-arrow-up-right-icon {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+
+  .connect-message-square-icon {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+
+  .case-challenge-grid {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+
+  .case-project-navigation {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+
+  .biography-philosophy-columns {
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    gap: 2rem;
+    padding-top: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .case-next-caption {
+    justify-content: flex-end;
+  }
+
+  .archive-eyebrow {
+    gap: 0.5rem;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .archive-email-link {
+    gap: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .connect-eyebrow {
+    gap: 0.5rem;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .archive-whatsapp-link {
+    gap: 0.625rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .biography-capabilities {
+    gap: 1rem;
+    padding-top: 1.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .archive-project-grid {
+    gap: 1.5rem;
+  }
+
+  .connect-details {
+    gap: 1.5rem;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  .connect-contact-cards {
+    gap: 2rem;
+  }
+
+  .connect-detail-column > :not([hidden]) ~ :not([hidden]) {
+    margin-top: .25rem;
+    margin-bottom: 0px;
+  }
+
+  .connect-page > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 4rem;
+    margin-bottom: 0px;
+  }
+
+  .biography-philosophy-introduction > :not([hidden]) ~ :not([hidden]) {
+    margin-top: .5rem;
+    margin-bottom: 0px;
+  }
+
+  .biography-philosophy-pillar > :not([hidden]) ~ :not([hidden]) {
+    margin-top: .5rem;
+    margin-bottom: 0px;
+  }
+
+  .biography-page > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 6rem;
+    margin-bottom: 0px;
+  }
+
+  .biography-paragraphs > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem;
+    margin-bottom: 0px;
+  }
+
+  .connect-header > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem;
+    margin-bottom: 0px;
+  }
+
+  .connect-card-content > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem;
+    margin-bottom: 0px;
+  }
+
+  .archive-header > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.5rem;
+    margin-bottom: 0px;
+  }
+
+  .archive-introduction > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.5rem;
+    margin-bottom: 0px;
+  }
+
+  .archive-contact-callout > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.5rem;
+    margin-bottom: 0px;
+  }
+
+  .biography-contact-callout > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.5rem;
+    margin-bottom: 0px;
+  }
+
+  .biography-introduction-copy > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 2rem;
+    margin-bottom: 0px;
+  }
+
+  .biography-philosophy > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 2rem;
+    margin-bottom: 0px;
+  }
+
+  .connect-whatsapp-card > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 2rem;
+    margin-bottom: 0px;
+  }
+
+  .connect-email-card > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 2rem;
+    margin-bottom: 0px;
+  }
+
+  .biography-philosophy {
+    border-radius: 1rem;
+    padding: 3rem;
+  }
+
+  .connect-whatsapp-card {
+    border-radius: 1rem;
+    padding: 2.5rem;
+  }
+
+  .connect-email-card {
+    border-radius: 1rem;
+    padding: 2.5rem;
+  }
+
+  .biography-capability {
+    padding: 0.875rem;
+  }
+
+  .case-video-player {
+    padding: 1rem;
+  }
+
+  .archive-page {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 6rem;
+    padding-top: 8rem;
+  }
+
+  .archive-master-drive-vault-link {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .biography-page {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 6rem;
+    padding-top: 8rem;
+  }
+
+  .connect-page {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 6rem;
+    padding-top: 8rem;
+  }
+
+  .biography-start-a-project-link {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .biography-contact-callout {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .connect-whatsapp-heading {
+    padding-top: 0.25rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .connect-email-heading {
+    padding-top: 0.25rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .archive-callout-copy {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .biography-callout-action {
+    padding-top: 1rem;
+  }
+
+  .connect-whatsapp-action {
+    padding-top: 1.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .connect-email-action {
+    padding-top: 1.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .case-next-project {
+    text-align: right;
+  }
+
+  .archive-subheading {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .biography-subheading {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .biography-callout-heading {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .archive-heading {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .biography-heading {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .connect-heading {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .case-heading {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .missing-heading {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .connect-detail-value {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .archive-description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .biography-description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .connect-description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .case-full-description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .biography-callout-copy {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .case-challenge-copy {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .biography-name-label {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .case-description {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .biography-freelance-video-editor-label {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .biography-location {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .biography-pillar-heading {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .connect-fastest-label {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .connect-direct-email-label {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .connect-detail-heading {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .connect-detail-description {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .connect-open-drive-folder-link {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+}
+
+@media (width >= 768px) {
+  .connect-details {
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+  }
+
+  .biography-philosophy {
+    padding: 4rem;
+  }
+
+  .archive-page {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .biography-page {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .connect-page {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .case-page {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .archive-heading {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .biography-heading {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .connect-heading {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .case-heading {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .connect-description {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+}
+
+@media (width >= 1024px) {
+  .case-sidebar {
+    grid-column: span 4 / span 4;
+  }
+
+  .biography-portrait-column {
+    grid-column: span 5 / span 5;
+  }
+
+  .biography-introduction-copy {
+    grid-column: span 7 / span 7;
+  }
+
+  .case-main-column {
+    grid-column: span 8 / span 8;
+  }
+
+  .biography-introduction {
+    grid-template-columns: repeat(12, minmax(0px, 1fr));
+    gap: 4rem;
+  }
+
+  .case-information {
+    grid-template-columns: repeat(12, minmax(0px, 1fr));
+  }
+
+  .archive-project-grid {
+    grid-template-columns: repeat(4, minmax(0px, 1fr));
+  }
+
+}
+
+/* Work category selection is native JavaScript; hidden cards leave the grid. */
+[data-filter][aria-pressed="false"] > span:last-child { color: rgb(13 13 13 / .5); }
+[data-filter][aria-pressed="true"] {
+  background: #0d0d0d;
+  color: white;
+  font-weight: 700;
+  border-width: 0;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1);
+}
+[data-filter][aria-pressed="true"] > span:last-child { color: #a3a3a3; }
+.header-navigation-link[aria-current="page"] { color: #0d0d0d; }
+.header-navigation-link[aria-current="page"] > span { width: 100%; }

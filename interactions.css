@@ -1,0 +1,74 @@
+/* Runtime states and animations, written in plain CSS. */
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #ecebe8; color: #0d0d0d; }
+[hidden] { display: none !important; }
+
+/* The outlined rows travel in opposing directions over the original 8 seconds. */
+[data-role="hero-outline-top"] {
+  animation: outline-drift-top 8s ease-in-out infinite;
+}
+[data-role="hero-outline-bottom"] {
+  animation: outline-drift-bottom 8s ease-in-out infinite;
+}
+@keyframes outline-drift-top {
+  0%, 100% { opacity: .6; transform: translateX(-24px); }
+  50% { opacity: .85; transform: translateX(18px); }
+}
+@keyframes outline-drift-bottom {
+  0%, 100% { opacity: .6; transform: translateX(18px); }
+  50% { opacity: .85; transform: translateX(-24px); }
+}
+[data-role="hero-carousel"] { touch-action: pan-y; }
+[data-card-index] { will-change: transform; transition: opacity .3s, box-shadow .3s; }
+[data-card-index].is-active {
+  box-shadow: 0 0 0 2px rgb(13 13 13 / .4), 0 20px 50px rgb(0 0 0 / .25);
+}
+[data-card-index]:not(.is-active):hover { filter: brightness(1.05); }
+[data-action="toggle-audio"].audio-enabled svg { color: #e63e26; }
+
+/* Match the fixed header's scrolled state without rebuilding its contents. */
+[data-role="site-header"].is-scrolled {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background: rgb(236 235 232 / .9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgb(13 13 13 / .1);
+  box-shadow: 0 1px 2px rgb(0 0 0 / .05);
+}
+/* Restoring Motion's viewport reveals using IntersectionObserver. */
+.js-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .6s cubic-bezier(.21,.47,.32,.98), transform .6s cubic-bezier(.21,.47,.32,.98);
+}
+.js-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+.js-ready [data-reveal-direction="down"]:not(.is-visible) { transform: translateY(-28px); }
+.js-ready [data-reveal-direction="left"]:not(.is-visible) { transform: translateX(28px); }
+.js-ready [data-reveal-direction="right"]:not(.is-visible) { transform: translateX(-28px); }
+.js-ready [data-reveal-direction="none"]:not(.is-visible) { transform: none; }
+[data-preview] { object-fit: cover; }
+[data-role="project-card"]:hover video,
+[data-role^="project-card-variant"]:hover video { transform: scale(1.05); filter: brightness(1.05); }
+[data-role="comparison-raw-image"] { max-width: none; }
+[data-comparison] { color: rgb(13 13 13 / .7); }
+[data-comparison]:hover { color: #e63e26; }
+[data-comparison].is-selected {
+  background: #0d0d0d;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 1px 2px rgb(0 0 0 / .05);
+}
+
+/* The service panel mirrors the original accordion's spacing and 280ms motion. */
+[data-service-item].is-open { border-color: #e63e26; box-shadow: 0 4px 6px -1px rgb(0 0 0 / .1); }
+[data-service-item].is-open [data-service] > div:first-child > div:first-child { background: #e63e26; }
+[data-service-item].is-open [data-role="service-chevron"] {
+  transform: rotate(180deg); background: #e63e26; border-color: #e63e26; color: white;
+}
+[data-section="workflow"] .interaction-group:hover { transform: translateY(-6px); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .js-ready [data-reveal] { opacity: 1; transform: none; }
+}
